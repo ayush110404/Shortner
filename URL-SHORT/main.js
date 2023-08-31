@@ -14,7 +14,7 @@ app.get('/',async (req,res)=>{
     return res.render('index',{url:findURL});
 })
 
-app.post('/shotit/',shortURL)
+app.post('/shortit/',shortURL)
 app.get('/:id',redirectURL);
 
 mongoose.connect("mongodb://127.0.0.1/urls")

@@ -9,7 +9,7 @@ const  urlSchema = new mongoose.Schema({
     shortURL:{
         type:String,
         required:true,
-        default:shortid()
+        default:shortid.generate
     }
 })
 
